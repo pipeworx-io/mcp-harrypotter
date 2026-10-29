@@ -1,0 +1,48 @@
+[
+  {
+    "name": "list_characters",
+    "description": "List Harry Potter characters (wizards, witches, and other figures). Optionally filter by Hogwarts house (Gryffindor, Slytherin, Hufflepuff, Ravenclaw) and/or a name substring.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "house": {
+          "type": "string",
+          "description": "Hogwarts house: gryffindor, slytherin, hufflepuff, or ravenclaw."
+        },
+        "search": {
+          "type": "string",
+          "description": "Case-insensitive name substring filter (client-side)."
+        }
+      }
+    }
+  },
+  {
+    "name": "list_students",
+    "description": "Return all Hogwarts students from the HP API (up to 60), each with name, house, species, gender, ancestry, patronus, wand, actor, date of birth, and alive status.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "list_staff",
+    "description": "Return all Hogwarts staff members (professors and employees) from the HP API, each with name, house, species, gender, ancestry, patronus, wand, actor, date of birth, and alive status.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "list_spells",
+    "description": "List Harry Potter spells with their effects. Optionally filter by a spell-name substring.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "search": {
+          "type": "string",
+          "description": "Case-insensitive spell-name substring filter."
+        }
+      }
+    }
+  }
+]

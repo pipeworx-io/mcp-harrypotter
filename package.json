@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-harrypotter",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Harry Potter API MCP (hp-api.onrender.com) — keyless. Characters / wizards, Hogwarts houses, students & staff, spells.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-harrypotter": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "harrypotter"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-harrypotter.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/harrypotter",
   "pipeworx": {
-    "sourceHash": "v1-e2c2ebce2edce1e5683d2e13325cec9dbc448ac7fe6b13308cbdcdba47b8ca9e",
-    "sourceCommit": "24e32b525f9c0b2fd7d94b519b08abb108cc11cd"
+    "mode": "gateway",
+    "slug": "harrypotter",
+    "gatewaySlug": "harrypotter",
+    "sourceHash": "v1-858b8e42761a7d5cc83bc9d31110d2beeb9337c36861a43416583ae228087639",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
