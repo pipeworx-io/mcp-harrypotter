@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-harrypotter",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Harry Potter API MCP (hp-api.onrender.com) — keyless. Characters / wizards, Hogwarts houses, students & staff, spells.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "harrypotter",
     "gatewaySlug": "harrypotter",
-    "sourceHash": "v1-858b8e42761a7d5cc83bc9d31110d2beeb9337c36861a43416583ae228087639",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-351714b468c0a9c21a6a750fb74893ce6fa61db6773bc08137b004ae7253d3d6",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
